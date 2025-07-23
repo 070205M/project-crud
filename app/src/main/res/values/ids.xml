@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etNama" type="id" />
+    <item name="etLatin" type="id" />
+    <item name="etDeskripsi" type="id" />
+    <item name="etGambar" type="id" />
+</resources>

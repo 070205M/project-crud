@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddHewanActivity"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- EditText Nama -->
+        <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="Nama"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- EditText Latin -->
+        <EditText
+            android:id="@+id/edtLatin"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="Latin"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@id/edtNama"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp" />
+
+        <!-- EditText Keterangan -->
+        <EditText
+            android:id="@+id/edtDeskripsi"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="Keterangan"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            app:layout_constraintTop_toBottomOf="@id/edtLatin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp" />
+
+        <!-- EditText URL Gambar -->
+        <EditText
+            android:id="@+id/edtUrl"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="Url Gambar"
+            android:inputType="textUri"
+            app:layout_constraintTop_toBottomOf="@id/edtDeskripsi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp" />
+
+        <!-- ImageView Preview -->
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Preview Gambar"
+            app:layout_constraintTop_toBottomOf="@id/edtUrl"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Tombol SAVE (⬅️ Sekarang benar) -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="SAVE"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            app:layout_constraintTop_toBottomOf="@id/imgPreview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp" />
+
+        <!-- Tombol BROWSE -->
+        <Button
+            android:id="@+id/btnBrowse"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="BROWSE"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_700"
+            app:layout_constraintTop_toBottomOf="@id/btnSimpan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
